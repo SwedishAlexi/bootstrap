@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/jQuery.js"></script>
+    <title>Bootstrap Projekt</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/projekt.css" rel="stylesheet">
+    <script src="http://maps.googleapis.com/maps/api/js?
+key=AIzaSyAJrFPPCr_Pj0lS2FfbFE6vmXfCUjiBZRA"></script>
+
+    <script>
+        window.onload = function() {
+            var latitude = 59.347491899999994;
+
+            var longitude = 18.049228799999998;
+            var mapOptions = {
+                center: new google.maps.LatLng(latitude, longitude),
+                zoom: 18,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            };
+            var map = new google.maps.Map(
+                document.getElementById("mapbild"),
+                mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(latitude, longitude),
+                map: map,
+                title: "Vi är här",
+                animation: google.maps.Animation.BOUNCE,
+
+            });
+
+            var info = new google.maps.InfoWindow({
+                content: "Vi är Här<br>  kontaktinfo : 12345556"
+            });
+            info.open(map, marker);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Bootstrap Projekt</a>
+        </div>
+        <div class="collapse navbar-collapse" id=""></div>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item"><a class="nav-link" href="projekt.html">Hem</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="projekt.html">Sida 1</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="projekt.html">Sida 2</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="projekt.html">Sida 3</a></li>
+        </ul>
+    </nav>
+
+    <div id="mapbild"></div>
+
+    <footer class="page-footer">
+        <div class="row-md-3 row-md">
+            <h5 class="title">Footer titel</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elementum lectus. Donec sollicitudin sapien a turpis condimentum, vitae congue arcu iaculis. Donec ut neque sed mi vehicula volutpat sed a odio. Curabitur hendrerit hendrerit justo sed mollis. Integer id nibh ut dolor commodo ultricies. Nulla eu orci eleifend, luctus erat ut, semper felis. Ut quis ornare nulla. Nam at tempus arcu. </p>
+
+            <ol class="breadcrumb">
+                <li><a href="#">Kontakta oss</a></li>
+                <li><a href="plats.html">Hitta hit</a></li>
+                <li><a href="#">Mer Information</a></li>
+            </ol>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/jQuery.js"></script>
+    <title>Bootstrap Projekt</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/projekt.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Bootstrap Projekt</a>
+            </div>
+            <div class="collapse navbar-collapse"></div>
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item"><a class="nav-link" href="projekt.html">Hem</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="projekt.html">Sida 1</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="projekt.html">Sida 2</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="projekt.html">Sida 3</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <!--      Sidomeny        -->
+            <div class="container">
+                <div class="row">
+                    <div class="wrapper">
+                        <div class="side-bar">
+                            <ul>
+                                <li class="menu-head">MENY<a href="#" class="push_menu"><span class="glyphicon glyphicon-align-justify pull-right"></span></a>
+                                </li>
+                                <div class="menu">
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Alternativ 1<span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alternativ 1</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 2</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Alternativ 2<span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alternativ 1</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 2</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Alternativ 3<span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alternativ 1</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 2</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Alternativ 4<span class="glyphicon glyphicon-menu-down pull-right"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alternativ 1</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 2</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Alternativ 3</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Artiklar    -->
+            <div class="inneholl">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="bilder/exempelbild.gif" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">40kr</h4>
+                                <h4><a href="#">Produkt</a></h4>
+                                <button type="button" class="btn btn-primary pull-right" onclick="buy()">Köp</button>
+                                <p>Beskrivning av produkt.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">Recensera</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="bilder/exempelbild.gif" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">40kr</h4>
+                                <h4><a href="#">Produkt 2</a></h4>
+                                <button type="button" class="btn btn-primary pull-right" onclick="buy()">Köp</button>
+                                <p>Beskrivning av produkt.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">Recensera</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="bilder/exempelbild.gif" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">40kr</h4>
+                                <h4><a href="#">Produkt 3</a></h4>
+                                <button type="button" class="btn btn-primary pull-right" onclick="buy()">Köp</button>
+                                <p>Beskrivning av produkt.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">Recensera</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="bilder/exempelbild.gif" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">40kr</h4>
+                                <h4><a href="#">Produkt 4</a></h4>
+                                <button type="button" class="btn btn-primary pull-right" onclick="buy()">Köp</button>
+                                <p>Beskrivning av produkt.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">Recensera</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star-empty big"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="bilder/exempelbild.gif" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">40kr</h4>
+                                <h4><a href="#">Produkt 5</a></h4>
+                                <button type="button" class="btn btn-primary pull-right" onclick="buy()">Köp</button>
+                                <p>Beskrivning av produkt.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">Recensera</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="row-md-3 row-md">
+                <h5 class="title">Footer titel</h5>
+                <canvas id="duk"></canvas>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elementum lectus. Donec sollicitudin sapien a turpis condimentum, vitae congue arcu iaculis. Donec ut neque sed mi vehicula volutpat sed a odio. Curabitur hendrerit hendrerit justo sed mollis. Integer id nibh ut dolor commodo ultricies. Nulla eu orci eleifend, luctus erat ut, semper felis. Ut quis ornare nulla. Nam at tempus arcu. </p>
+
+                <ol class="breadcrumb">
+                    <li><a href="#">Kontakta oss</a></li>
+                    <li><a href="plats.html">Hitta hit</a></li>
+                    <li><a href="#">Mer Information</a></li>
+                </ol>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/projekt.js"></script>
+</body>
+
+</html>
